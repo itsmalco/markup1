@@ -1,0 +1,175 @@
+/* STYLES */
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:#36393f;
+  color: rgba(255, 255, 255, 0.835);
+}
+
+@keyframes animation {
+  from {
+    letter-spacing: 12px;
+  }
+  to {
+    letter-spacing: 2;
+  }
+}
+
+.seminal {
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.animated {
+  animation: animation 5s;
+}
+
+.image1 {
+  width: 100%;
+  max-width: 100;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.firstp {
+  position: relative;
+  bottom: 100px;
+  top: 100px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'Alatsi', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 2;
+}
+
+.written {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.firstp {
+  display: grid;
+  grid-gap: 5px 20px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.harm {
+  position: relative;
+  top: 40px;
+}
+
+p {
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  top: 70px;
+  text-align: left;
+  font-size: 100px;
+}
+
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  letter-spacing: 15px;
+  text-align: left;
+  
+}
+
+main {
+  /* display: grid;*/
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+}
+
+a {
+  color: greenyellow;
+}
+
+a:hover {
+  color: blue;
+}
+
+div.list1 {
+  text-align: center;
+}
+
+ul { 
+	display: inline-block; 
+	text-align: left; 
+}
+
+#list {
+  position: relative;
+  top: 50px;
+  margin-left: 1px;
+  padding: 10px;
+}
+
+dl {
+  counter-reset: count;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	margin: 0;
+  gap: 50px;
+}
+
+dl a {
+  color: rgb(119, 149, 177);
+}
+
+dl a:hover {
+  color: rgb(119, 187, 250);
+}
+
+dl a:visited {
+  color: rgb(29, 87, 141);
+}
+
+dt {
+  position: relative;
+  top: 80px;
+  counter-increment: count;
+  color: rgb(119, 149, 177);
+  font-family: 'Alatsi', sans-serif;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+dt::before {
+  content: counter(count, decimal-leading-zero)". ";
+  font-family: 'Bebas Neue', cursive;
+  color: slategray;
+}
+
+dt b {
+  font-size: 4vw;
+  color: rgb(134, 177, 218);
+}
